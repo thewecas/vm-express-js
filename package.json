@@ -1,0 +1,38 @@
+{
+  "name": "express-tut",
+  "version": "1.0.0",
+  "description": "Learning Express",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js ",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "vikas m",
+  "license": "ISC",
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "connect-mongo": "^5.1.0",
+    "cookie-parser": "^1.4.6",
+    "dotenv": "^16.4.4",
+    "express": "^4.18.2",
+    "express-session": "^1.18.0",
+    "mongoose": "^8.1.2",
+    "passport": "^0.7.0",
+    "passport-discord": "^0.1.4",
+    "passport-google-oauth20": "^2.0.0",
+    "passport-local": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.6",
+    "@types/connect-mongo": "^3.1.3",
+    "@types/cookie-parser": "^1.4.6",
+    "@types/express": "^4.17.21",
+    "@types/express-session": "^1.17.10",
+    "@types/mongoose": "^5.11.97",
+    "@types/passport": "^1.0.16",
+    "@types/passport-discord": "^0.1.11",
+    "@types/passport-google-oauth20": "^2.0.14",
+    "@types/passport-local": "^1.0.38",
+    "nodemon": "^3.0.3"
+  }
+}
