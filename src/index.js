@@ -8,7 +8,7 @@ const MongoStore = require("connect-mongo");
 const logger = require("./middlewares/logger");
 
 require("./database");
-// require("./strategies/local");
+require("./strategies/local");
 require("./strategies/discord");
 require("./strategies/google");
 
