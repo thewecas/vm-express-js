@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 
 const logger = (req, res, next) => {
-	fs.open("./log.txt", "a", (err, fd) => {
+	fs.open("./log.txt", "a+", (err, fd) => {
 		if (err) throw err;
 		fs.appendFile(
 			fd,

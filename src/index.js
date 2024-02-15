@@ -8,9 +8,9 @@ const MongoStore = require("connect-mongo");
 const logger = require("./middlewares/logger");
 
 require("./database");
-require("./strategies/local");
-require("./strategies/discord");
-require("./strategies/google");
+
+// Passport Auth Strategies
+require('./passport-auth');
 
 //Routes
 const authRoute = require("./router/auth");
@@ -45,7 +45,7 @@ app.use("/api/v1/auth", authRoute);
 
 app.use((req, res, next) => {
 	if (req.user) next();
-	else res.sendStatus(500);
+	else res.sendStatus(401);
 });
 
 app.use("/api/v1/groceries", groceriesRoute);

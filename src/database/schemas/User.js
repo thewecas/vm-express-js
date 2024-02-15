@@ -7,9 +7,22 @@ const UserSchema = new mongoose.Schema(
 			required: true,
 			unique: true,
 		},
+		authProvider: {
+			type: String,
+			required: true,
+		},
+		authId: {
+			type: String,
+			unique: true,
+		},
+		displayName: {
+			type: String,
+		},
+		displayPicture: {
+			type: String,
+		},
 		password: {
 			type: String,
-			requride: true,
 		},
 	},
 	{ timestamps: true }
